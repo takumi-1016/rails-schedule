@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+body{
+    font-family:'Noto Sans JP', sans-serif;
+}
+header{
+    color: #333;
+    background: #dae5f3;
+    border-bottom: solid 3px #455586;
+}
+
+.Header{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center; 
+    font-size: 25px;
+    position: fixed; /* ヘッダーを固定する */
+    top: 0; /* 上部から配置の基準位置を決める */
+    left: 0; /* 左から配置の基準位置を決める */
+    width: 100%; /* ヘッダーの横幅を指定する */
+    height: 100px;
+    background-color: #0351cd; /* ヘッダーの背景色を指定する */
+    color: #ffffff; /* フォントの色を指定する */
+ }
+ .Header h1{
+    margin-left: 10px;
+ }
+ .NewPlan{
+    margin-right: 10px;
+    display: inline-block;
+    padding: 0.1em 0.3em;
+    transition: all .3s;
+    color: #fff;
+    background-color: #00BCD4; 
+    text-decoration: none;
+ }
+ body {
+    margin: 0;
+ }
+ 
+ 
+ table th {
+    background-color: #0dc9ee;
+    padding: 10px 20px;
+}
+
+table td {
+    background-color: hsl(148, 31%, 81%);
+    padding: 10px 20px;
+}
+
+.notice {
+    background-color: rgb(228, 218, 27);
+    padding: 5px;
+}
+main{
+    margin: 10px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+footer{
+    margin: 0px;
+
+}
+.Footer{
+    position: fixed; /* ヘッダーを固定する */
+    bottom: 0; /* 上部から配置の基準位置を決める */
+    left: 0; /* 左から配置の基準位置を決める */
+    width: 100%; /* ヘッダーの横幅を指定する */
+    height: 80px;
+    color: rgb(255, 255, 255);
+    background: #065ed2;
+    border-bottom: solid 3px #455586;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#plan_number{
+    margin-right: 30px;
+}
+#all_day_radio_bottun{
+    display: flex;
+    align-items: center;
+}
