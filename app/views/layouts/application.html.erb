@@ -11,6 +11,18 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <div class="Header">
+        <h1>スケジュール管理アプリ</h1>
+        <div><%= link_to "スケジュール登録", :new_plan,class:"NewPlan" %></div>
+      </div>   
+    </header>
+      <%= yield %>
+    <footer>
+      <div class="Footer">
+        <h1>現在の時刻 : <%=Time.new.strftime("%Y/%m/%d/%T")%></h1>
+        <h1 id="plan_number">現在のスケジュール数 : <%= Plan.count%></h1>
+      </div>
+    </footer>
   </body>
 </html>
